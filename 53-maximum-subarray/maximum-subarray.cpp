@@ -5,15 +5,15 @@ public:
         int l=0;
         int r=0;
         int sum=0;
-        int maxsum=INT_MIN;
+        int max_sum=INT_MIN;
         while(r<n){
             sum+=nums[r];
-            maxsum=max(maxsum,sum);
+            max_sum=max(max_sum,sum);
             r++;
             if(sum<0){
                 sum=0;
             }
         }
-        return maxsum;
+        return max_sum;
     }
 };
